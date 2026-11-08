@@ -57,9 +57,26 @@ h2{
 
 .playground-card:hover{
   transform: translateY(-3px);
+  cursor: pointer;
 }
 
 .playground-card p{
   color: #88889A;
   margin-top: 8px;
+}
+
+.typing-area{
+  position: relative;
+  height: 450px;
+  background: black;
+  border-radius: 16px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.typing-area span{
+  position: absolute;
+  font-size: 40px;
+  font-weight: 800;
+  pointer-events: none;
 }

@@ -1,6 +1,6 @@
 function PlaygroundCard(props){
     return(
-        <div className="playground-card">
+        <div className="playground-card" onClick={props.onClick}>
             <h2>{props.title}</h2>
             <p>{props.description}</p>
         </div>

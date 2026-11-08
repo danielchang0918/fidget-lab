@@ -1,6 +1,6 @@
 import PlaygroundCard from "../components/PlaygroundCard";
 
-function Home(){
+function Home({onSelect}){
     return (
         <div>
             <h2>Choose your playground</h2>
@@ -8,6 +8,7 @@ function Home(){
             <PlaygroundCard 
                 title="Typing Playground"
                 description="Make letters fly!"
+                onClick={()=>onSelect("typing")}
             />
 
             <PlaygroundCard 
