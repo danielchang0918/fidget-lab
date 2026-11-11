@@ -110,25 +110,20 @@ function TypingPlayground() {
     }, []);
 
     return (
-        <div>
-            <h2>Typing Playground</h2>
-            <p>Press any key!</p>
-
-            <div className="typing-area">
-                {letters.map(letter => (
-                    <span
-                        key={letter.id}
-                        style={{
-                            left: `${letter.x}%`,
-                            top: `${letter.y}%`,
-                            color: letter.color,
-                            transform: `rotate(${letter.rotation}deg)`,
-                        }}
-                    >
-                        {letter.character}
-                    </span>
-                ))}
-            </div>
+        <div className="typing-area">
+            {letters.map(letter => (
+                <span
+                    key={letter.id}
+                    style={{
+                        left: `${letter.x}%`,
+                        top: `${letter.y}%`,
+                        color: letter.color,
+                        transform: `rotate(${letter.rotation}deg)`,
+                    }}
+                >
+                    {letter.character}
+                </span>
+            ))}
         </div>
     );
 }
